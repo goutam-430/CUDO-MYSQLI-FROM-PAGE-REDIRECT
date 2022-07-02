@@ -6,7 +6,7 @@ if (isset($_POST['done'])){
     $uname = $_POST['username'];
     $mail = $_POST['email'];
     $pass = $_POST['password'];
-    $q = " UPDATE `login` SET `id`='$id',`U_name`='$uname',`Email`='$mail',`Password`='$pass' WHERE id=$id ";
+    $q = " UPDATE `login` SET `id`='$id',`U_name`='$uname',`Email`='$mail',`Password`='$pass' WHERE id=$id  ";
 
     $query = mysqli_query($con, $q);
     header('location:display.php');
